@@ -1,12 +1,10 @@
 <?php
-$nutrition = [
-    "fat" => 38,
-    "sugar" => 51,
-    "salt" => 0.25,
+$offers = [
+    ["name" => "Toffee", "price" => 5,"stock" => 120],
+    ["name" => "Mints", "price" => 4,"stock" => 66],
+    ["name" => "Fudge", "price" => 3,"stock" => 97],
+    ["name" => "Chocolate", "price" => 2,"stock" => 83]
 ];
-$nutrition["fat"]=36;
-$nutrition["fiber"]=2.1;
-$nutrition["protein"]=7.3; 
 
 ?>
 
@@ -18,12 +16,15 @@ $nutrition["protein"]=7.3;
 </head>
 <body>
     <h1>The Candy Store</h1>
-    <h2>Nutrition (per 100g)</h2>
-    <p>Fat: <?php echo $nutrition["fat"]; ?> </p>
-    <p>Sugar: <?php echo $nutrition["sugar"]; ?> </p>
-    <p>Salt: <?php echo $nutrition["salt"]; ?> </p>
-    <p>Fiber: <?php echo $nutrition["fiber"]; ?> </p>
-    <p>Protein: <?php echo $nutrition["protein"]; ?> </p>
+    <h2>Offers</h2>
+    <p><?php echo $offers[0]["name"]; ?> =
+    <?php echo $offers[0]["price"]; ?></p>
+    <p><?php echo $offers[1]["name"]; ?> =
+    <?php echo $offers[1]["price"]; ?></p>
+    <p><?php echo $offers[2]["name"]; ?> =
+    <?php echo $offers[2]["price"]; ?></p>
+    <p><?php echo $offers[3]["name"]; ?> =
+    <?php echo $offers[3]["price"]; ?></p>
 
 </body>
 </html>
