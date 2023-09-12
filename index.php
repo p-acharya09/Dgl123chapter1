@@ -1,15 +1,16 @@
 <?php
 $item = "Chocolate";
-$stock = 8;
+$stock = 3;
 $wanted = 5;
-$can_buy = ($wanted <= $stock);
+$deliver = true;
+$can_buy = (($wanted <= $stock)&&($deliver == true));
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Comparison</title>
+    <title>Comparison operator</title>
 </head>
 <body>
     <h1>The Candy Store</h1>
