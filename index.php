@@ -1,5 +1,7 @@
 <?php
+$name = "Guest";
 $name = "Prashant";
+$name = "Jack";
 $price = 2;
 ?>
 
@@ -7,7 +9,7 @@ $price = 2;
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Variables</title>
+    <title>Updating Variables</title>
 </head>
 <body>
     <h1>The Candy Store</h1>
