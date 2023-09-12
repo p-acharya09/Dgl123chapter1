@@ -1,19 +1,23 @@
 <?php
-$prefix = "Thank you";
-$name = "Prashant";
-$message = "$prefix $name"; 
+$item = "Chocolate";
+$stock = 8;
+$wanted = 5;
+$can_buy = ($wanted <= $stock);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>String Operators</title>
+    <title>Comparison</title>
 </head>
 <body>
     <h1>The Candy Store</h1>
-    <h2><?= $name ?>'s Order</h2>
-    <p><?= $message ?></p>
+    <h2>Shopping Cart</h2>
+    <p>Item: <?= $item ?></p>
+    <p>Stock: <?= $stock ?></p>
+    <p>Ordered: <?= $wanted ?></p>
+    <p>Can buy: <?= $can_buy ?></p>
 
 </body>
 </html>
