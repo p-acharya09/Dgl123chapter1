@@ -1,5 +1,13 @@
 <?php
-$best_sellers = ['Chocolate', 'Mints', 'Fudge', 'Licorice', 'Bubble gum', 'Toffee', 'Jelly beans'];
+$nutrition = [
+    "fat" => 38,
+    "sugar" => 51,
+    "salt" => 0.25,
+];
+$nutrition["fat"]=36;
+$nutrition["fiber"]=2.1;
+$nutrition["protein"]=7.3; 
+
 ?>
 
 <!DOCTYPE html>
@@ -10,13 +18,12 @@ $best_sellers = ['Chocolate', 'Mints', 'Fudge', 'Licorice', 'Bubble gum', 'Toffe
 </head>
 <body>
     <h1>The Candy Store</h1>
-    <h2>Best Sellers</h2>
-    <ul>
-        <li><?php echo $best_sellers[0]; ?></li>
-        <li><?php echo $best_sellers[1]; ?></li>
-        <li><?php echo $best_sellers[2]; ?></li>
-        <li><?php echo $best_sellers[3]; ?></li>
-        <li><?php echo $best_sellers[4]; ?></li>
-    </ul>
+    <h2>Nutrition (per 100g)</h2>
+    <p>Fat: <?php echo $nutrition["fat"]; ?> </p>
+    <p>Sugar: <?php echo $nutrition["sugar"]; ?> </p>
+    <p>Salt: <?php echo $nutrition["salt"]; ?> </p>
+    <p>Fiber: <?php echo $nutrition["fiber"]; ?> </p>
+    <p>Protein: <?php echo $nutrition["protein"]; ?> </p>
+
 </body>
 </html>
