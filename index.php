@@ -17,12 +17,13 @@ $saving = $usual_price - $offer_price;
 <head>
     <meta charset="UTF-8">
     <title>The Candy Store</title>
+    <link rel='stylesheet' href='css/styles.css'>
 </head>
 <body>
     <h1>The Candy Store</h1>
     <h2>Multi-buy Offer</h2>
     <p><?= $greeting ?></p>
-    <p>Save $<?= $saving ?></p>
+    <p class='sticker'>Save $<?= $saving ?></p>
     <p>Buy <?= $offer['qty']?> packs of <?=$offer['item']?>
     for $<?= $offer_price ?><br>(Usual price $<?=$usual_price?>)</p>
 </body>
